@@ -33,7 +33,7 @@ public class BulletController : MonoBehaviour
         RobotController rc = other.gameObject.GetComponent<RobotController>();
        if (rc != null)
         {
-          rc.Fixed();//修复敌人
+          rc.Fixed();//修复敌人的方法
         }
         AudioManager.instance.AudioPlay(hitClip);//播放命中音效
         Destroy(this.gameObject);
